@@ -17,8 +17,8 @@ export default function fibonacci(n) {
   let iterationsCounter = n - 1;
 
   while (iterationsCounter) {
+    previousValue = currentValue;
     currentValue += previousValue;
-    previousValue = currentValue - previousValue;
 
     fibSequence.push(currentValue);
 
