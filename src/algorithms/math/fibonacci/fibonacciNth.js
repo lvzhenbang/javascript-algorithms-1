@@ -15,9 +15,8 @@ export default function fibonacciNth(n) {
   let iterationsCounter = n - 1;
 
   while (iterationsCounter) {
+    previousValue = currentValue;
     currentValue += previousValue;
-    previousValue = currentValue - previousValue;
-
     iterationsCounter -= 1;
   }
 
